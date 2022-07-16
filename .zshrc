@@ -22,9 +22,13 @@ prompt pure
 
 # neofetch
 
-source ~/.zsh/syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
  ZSH_HIGHLIGHT_STYLES[command]='fg=blue,bold'
  ZSH_HIGHLIGHT_STYLES[precommand]='fg=blue'
  ZSH_HIGHLIGHT_STYLES[builtin]='fg=blue,bold'
-
+source /home/cw/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

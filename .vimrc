@@ -1,7 +1,9 @@
 
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'frazrepo/vim-rainbow'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 call plug#end()
 
@@ -12,8 +14,11 @@ set syntax=java
 set termguicolors
 colorscheme nightfly
 hi Normal guibg=NONE ctermbg=NONE
+
+filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
+set expandtab
 
 let g:rainbow_active = 1
 
