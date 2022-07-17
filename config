@@ -19,6 +19,12 @@ font pango:monospace 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+#start plank dock on startup of i3
+exec --no-startup-id XDG_SESSION_TYPE=x11 plank
+
+# ALL FLOATING WINDOWS
+ for_window [class="[.]*"] floating enable
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -35,7 +41,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # for transparency
-exec --no-startup-id picom
+exec --no-startup-id picom --experimental-backends
 
 # to load bg photo
 exec ~/.fehbg &
@@ -102,10 +108,12 @@ bindsym $mod+Return exec $term
  gaps inner $inner_gaps
  gaps outer $outer_gaps
  gaps top $top_gaps
+ gaps bottom $bottom_gaps
 
  set $inner_gaps 23
  set $outer_gaps -1
  set $top_gaps -25
+ set $bottom_gaps -97
 
  set $term --no-startup-id kitty
 

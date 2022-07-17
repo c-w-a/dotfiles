@@ -15,7 +15,8 @@ alias cat="bat"
 alias ll="ls -Alh"
 alias ls="lsd --group-dirs first"
 alias code="cd ~/Documents/projects"
-
+alias speak="espeak -v en+f5 -a 193 -s 157"
+alias xiu="oneko -tora -bg salmon -tofocus"
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure

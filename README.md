@@ -19,6 +19,8 @@ FEH:        LOCATION: ~/.fehbg
 
 RANGER:     LOCATION: ~/.config/ranger/rc.conf        DEPENDENCY: kitty, w3m
 
-PICOM:      LOCATION: ~/.config/picom.conf
+PICOM:      LOCATION: ~/.config/picom.confi           NOTE: need jonaburg-fix fork
+
+PLANK:      LOCATION: /usr/share/plank/themes/default/dock.theme
 
 ALSO: cbonsai, vtop 
