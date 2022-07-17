@@ -23,4 +23,4 @@ PICOM:      LOCATION: ~/.config/picom.confi           NOTE: need jonaburg-fix fo
 
 PLANK:      LOCATION: /usr/share/plank/themes/default/dock.theme
 
-ALSO: cbonsai, vtop 
+ALSO: cbonsai, vtop, oneko
